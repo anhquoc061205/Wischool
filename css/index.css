@@ -1,0 +1,73 @@
+/* css priority
+- internal, external
+-universal (*) => có độ ưu tiên thấp nhất - 0 điểm
+-tag name (css thông qua tên thẻ) - 1 điểm
+- class name - 10 điểm
+- id 100 điểm
+- inline 1000 điểm
+ */
+/* Dùng css
+    - inline (style ngay thẻ)
+    - internal (tạo css trong file html)
+    - external (tạo 1 file css mới và connect vào intal)
+ */
+ /* - tìm tới thẻ h1 có class là score và id là score */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ *{
+   font-family: 'Roboto', sans-serif;
+ }
+ .header{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+ .header_nav a{
+   text-decoration: none;
+   padding: 0px 20px;
+   font-size: 16px;
+   color: var(--gray3, rgba(64, 64, 64, 0.80));
+   font-weight: 600;
+ }
+ .login{
+   color: #09B451;
+   border: none;
+   background: transparent;
+   font-size: 16px;
+ }
+ .btn{
+   border: none;
+   padding: 12px 20px;
+ }
+ .register{
+   color: #FFF;
+   font-size: 16px;
+   background: #09B451;
+   border-radius: 5px;
+   border: none;
+ }
+ .header-mobile{
+  display: none;
+ }
+ @media only screen and (max-width: 1000px) {
+  .desktop{
+    display: none !important; 
+  }
+ .header-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    }
+ }
+ .header-mobile i {
+  font-size: 20px;
+ }
+ .header-mobile img {
+  font-size: 20px;
+ }
+ .header-mobile .logo{
+  display: flex;
+  align-items: center;
+ }
+ .header-mobile .logo i {
+  padding-right: 20px;
+ }
