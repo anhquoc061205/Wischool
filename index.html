@@ -1,48 +1,53 @@
 <html>
     <head>
-        <title>WiSchool</title>
-        <link rel="stylesheet" href="./css/index.css">
-
+        <title>
+            Tính điểm trung bình
+        </title>
+        <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <!-- flex box -->
-        <!-- Giúp tất cả phần tuử con trong cha lên môt hàng -->
-        <!-- BE block(cha) element(con) -->
-        <header class="header desktop">
-            <div 
+        <p>Tính điểm trung bình 9 môn học</p>
+        <div>
+            <label for="avg1">Môn Toán:</label>
+            <input type="number" id="avg1">
+        </div>
+        <div>
+            <label for="avg2">Môn Văn:</label>
+            <input type="number" id="avg2">
+        </div> 
+        <div>
+            <label for="avg3">Môn Tiếng Anh:</label>
+            <input type="number" id="avg3">
+        </div> 
+        <div>
+            <label for="avg4">Môn Vật Lý:</label>
+            <input type="number" id="avg4">
+        </div>
+         <div> 
+            <label for="avg5">Môn Hóa:</label>
+            <input type="number" id="avg5">
+        </div>
+        <div>
+            <label for="avg6">Môn Sinh Học:</label>
+            <input type="number" id="avg6">
+        </div>
+        <div>
+            <label for="avg7">Môn Lịch Sử:</label>
+            <input type="number" id="avg7">
+        </div>
+        <div>
+            <label for="avg8">Môn Địa Lí:</label>
+            <input type="number" id="avg8">
+        </div>
+         <div> 
+            <label for="avg9">Môn Giáo Dục Công Dân:</label>
+            <input type="number" id="avg9">
+        </div>
 
-            class="header_logo">
-            <img src="./images/Group 177.svg" alt="">
+        <button onclick="calcAvg()">Xác nhận</button>
 
-            </div>
-            <div class="header_nav">
+        <p class="result" id="result">Điểm trung bình tất cả các môn là: <strong id="score">8.67</strong></p>
 
-              <a href="">Home</a>
-              <a href="">Courses</a>
-              <a href="">InStuctors</a>
-              <a href="">Shedules</a>
-              <a href="">Contact Us</a>
-
-            </div>
-
-            <div class="header_button">
-
-            <i class="fa fa-search"></i>
-
-            <button class="btn login">Login</button>
-
-            <button class="btn register">Register</button>
-            </div>
-        </header>
-        <header class="header-mobile">
-           <div class="logo">
-            <i class="fab fa-accessible-icon"></i>
-            <img src="./images/Group 177.svg" alt="">
-           </div>
-           <div>
-            <i class="fab fa-accusoft"></i>
-           </div>
-
-        </header>
+        <script src="./index.js"></script>
     </body>
 </html>
